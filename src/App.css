@@ -1,0 +1,27 @@
+@import "tailwindcss";
+body {
+  display: block;
+}
+button {
+  background-color: none;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(1, 40px);
+  gap: 10px;
+}
+
+.box1 {
+  grid-row: span 2; 
+  grid-column: span 1;
+  align-self: stretch;
+}
+
+.box2, .box3 {
+  align-self: start;
+}
+
+
+
+
